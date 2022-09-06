@@ -5,13 +5,13 @@
     padding-top: 40px;
 }
 
-.find {
+.content {
     width: 1024px;
     display: flex;
     justify-content: space-around;
 }
 
-.filterBtn {
+.Sidebar_Btn_item {
     width: 280px;
     height: 50px;
     background-color: #fff;
@@ -22,17 +22,18 @@
     align-items: center;
     font-size: 13px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
-.icon {
+.Sidebar_Btn_ico {
     padding: 0px 17px 0px 25px;
 }
 
-.filterBlock {
+.Sidebar {
     width: 280px;
 }
 
-.filters {
+.Sidebar_Filters {
     width: 280px;
     background-color: #fff;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
@@ -50,7 +51,7 @@ hr {
     border: none;
 }
 
-.filterClear {
+.Sidebar_filterClear {
     color: #3882F3;
     text-transform: uppercase;
     width: 280px;

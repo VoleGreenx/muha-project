@@ -1,24 +1,30 @@
 import React from 'react';
-import Filteritem from './Filteritem';
+import Filter_country from './Filter_country';
 import classes from './Findjob.module.css';
 import Vacancy from './Vacancy';
 
 const Findjob = (props) => {
     return (
         <div className = {classes.wrap}>
-            <div className = {classes.find}>
-                <div className = {classes.filterBlock}>
-                    <div className = {classes.filterBtn}>
-                        <img className = {classes.icon} src="/img/eyeIcon.svg" alt="" />
-                        <p>Зарплаты по регионам</p>
+            <div className = {classes.content}>
+                <div className = {classes.Sidebar}>
+                    <div Sidebar_Btn>
+                        <a href="#" className= {classes.Sidebar_Btn_item}>
+                            <img className = {classes.Sidebar_Btn_ico} src="/img/eyeIcon.svg" alt="" />
+                            <p>Зарплаты по регионам</p>
+                        </a>
                     </div>
 
-                    <div className = {classes.filters}>
-                        <Filteritem />
-                        <Filteritem />
-                        <Filteritem />
+                    <div className = {classes.Sidebar_Filters}>
+                        <Filter_country />
+                        {/* Нужно добавить для каждого отдельно??
+                        <Filter_qualificattion /> 
+                        <Filter_salary /> 
+                        */}
+                        
+                        <Filter_country />
                         <hr />
-                        <div className = {classes.filterClear}>Сбросить все фильтры</div>
+                        <div className = {classes.Sidebar_filterClear}>Сбросить все фильтры</div>
                     </div>
                 </div>
                     <div className = {classes.vacancy}>
