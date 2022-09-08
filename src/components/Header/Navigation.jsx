@@ -1,17 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import classes from "./Navigation.module.css";
 
 const Navigation = () => {
     return (
         <div className={classes.navig}>
-           <a href="/home"><img className={classes.logo} src="img/logo.svg" alt=""/></a> 
+           <Link to="/"><img className={classes.logo} src="img/logo.svg" alt=""/></Link> 
             <nav>
-                <a className={classes.item}>Оставить отзыв</a>
-                <a href ="/findjob" className={classes.item}>Найти работу</a>
-                <a className={classes.item}>Акции</a>
-                <a className={classes.item}>Справка</a>
-                <a className={classes.item}>Русский</a>
-                <a href ="/login" className={classes.item}><img className={classes.account} src="img/account.svg" alt=""/>Войти</a>
+                <Link className={classes.item}>Оставить отзыв</Link>
+                <Link to ="/findjob" className={classes.item}>Найти работу</Link>
+                <Link className={classes.item}>Акции</Link>
+                <Link className={classes.item}>Справка</Link>
+                <Link className={classes.item}>Русский</Link>
+                <Link to ="/login" className={classes.item}><img className={classes.account} src="img/account.svg" alt=""/>Войти</Link>
             </nav>
         </div>
         

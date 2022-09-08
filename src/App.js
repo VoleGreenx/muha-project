@@ -1,15 +1,11 @@
 import React from 'react';
 import Header from './components/Header/Header';
-import Area from './components/Header/Area';
-import Difference from './components/Difference/Difference';
-import Reviews from './components/Reviews/Reviews';
 import Footer from './components/Footer/Footer';
 import Findjob from './components/FindJob/Findjob';
 import { BrowserRouter, Route } from 'react-router-dom';
-
-import './App.css';
-import Login from './components/Registration/Login';
 import LoginPage from "./pages/login-page/login-page";
+import './App.css';
+import HomePage from './pages/home-page/home-page';
 
 
 
@@ -18,17 +14,10 @@ const App = () => {
     <BrowserRouter>
       <div className="app-wrapper">
         <Header />
-        <Route path ="/login" component = {Login} /> 
-        <Route path ="/home">
-            <Area />
-            <Difference />
-            <Reviews />
-            <Footer />
-        </Route>
-
+        <Route exact path ="/" component = {HomePage} />
+        <Route path ="/login" component = {LoginPage} /> 
         <Route path ="/findjob" component = {Findjob} />
-          <LoginPage/>
-
+        <Footer />
       </div>
     </BrowserRouter>)
 }

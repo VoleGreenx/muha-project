@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
+import Login from './login-page.module';
 
 const LoginPage = () =>  {
-
         return (
-            <div>
-                хуй
-            </div>
+            <Login />
         );
 
 }
