@@ -9,6 +9,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 import './App.css';
 import Login from './components/Registration/Login';
+import LoginPage from "./pages/login-page/login-page";
 
 
 
@@ -25,7 +26,8 @@ const App = () => {
             <Footer />
         </Route>
 
-        <Route path ="/findjob" component = {Findjob} /> 
+        <Route path ="/findjob" component = {Findjob} />
+          <LoginPage/>
 
       </div>
     </BrowserRouter>)
