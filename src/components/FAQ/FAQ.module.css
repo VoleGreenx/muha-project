@@ -1,0 +1,47 @@
+.wrap {
+    display: flex;
+    height: 814px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    padding-bottom: 37px;
+}
+
+.footerWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerBtbSurf {
+    background-color: red;
+    width: 450px;
+    height: 80px;
+    border-radius: 25px;
+}
+
+.btnWrap {
+    display: flex;
+    width: 1024px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footerBtn {
+    width: 180px;
+    height: 50px;
+    background-color: #0F53FA;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    margin-top: 39px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}

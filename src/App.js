@@ -1,9 +1,10 @@
 import React from 'react';
 import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import FAQ from './components/FAQ/FAQ';
 import Findjob from './components/FindJob/Findjob';
 import { BrowserRouter, Route } from 'react-router-dom';
 import LoginPage from "./pages/login-page/login-page";
+import Footer from './components/Footer/Footer';
 import './App.css';
 import HomePage from './pages/home-page/home-page';
 
