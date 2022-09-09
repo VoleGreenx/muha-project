@@ -5,7 +5,7 @@ import classes from "./FAQ.module.css";
 const FAQ = () => {
     return (
         <div className = {classes.wrap}>
-            <div className = {classes.FAQWrap}>
+            <div className = {classes.faqWrap}>
                     <h2 className = {classes.text}>Каждый отзыв отражает персональную историю</h2>
                <div className = {classes.btnWrap}>
                     <Btn text = "123" />
@@ -15,7 +15,7 @@ const FAQ = () => {
                     <Btn text = "1237" />
                     <Btn text = "1238" />
                </div>
-               <a href="" className = {classes.FAQBtn}>Перейти в справку</a>
+               <a href="" className = {classes.faqBtn}>Перейти в справку</a>
             </div>
         </div>
     );

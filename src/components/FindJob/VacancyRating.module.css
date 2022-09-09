@@ -1,0 +1,30 @@
+.ratingBlock {
+    width: 206px;
+    height: 23px;
+    border-radius: 5px;
+    background: rgba(56, 130, 243, 0.07);
+    display: flex;
+    align-items: center;
+    padding: 3px 10px;
+    color: #3882F3;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.ratingValue {
+    font-size: 15px;
+    background: #414853;
+    border-radius: 10px;
+    color: #ffffff;
+    width: 38px;
+    height: 18px;
+    text-align: center;
+    margin: 3px 12px;
+}
+
+

@@ -1,5 +1,8 @@
 import React from 'react';
+import {Link} from "react-router-dom";
+
 import classes from "./Area.module.css";
+
 
 const Area = () => {
     return (
@@ -10,8 +13,8 @@ const Area = () => {
                     <p className = {classes.text}> Найдите работу заграницей, которая будет стоить вашего 
                     труда. Или оставьте свою анонимную оценку работодателям, с которыми имели дело.</p>
                     <div className = {classes.btnBloc}>
-                        <a href="/Findjob" className = {classes.areaBtn}>Найти работу</a> 
-                        <a href="#" className = {classes.areaBtn}>Оставить отзыв</a>   
+                        <Link to="/Findjob" className = {classes.areaBtn}>Найти работу</Link>
+                        <Link to="#" className = {classes.areaBtn}>Оставить отзыв</Link>
                     </div>
                     
                 </div>

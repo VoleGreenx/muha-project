@@ -1,26 +1,29 @@
-import React from 'react';
-import Header from './components/Header/Header';
-import FAQ from './components/FAQ/FAQ';
-import Findjob from './components/FindJob/Findjob';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import HomePage from "./pages/home-page/home-page";
+import FindjobePage from "./pages/findjob-page/findjobe-page";
 import LoginPage from "./pages/login-page/login-page";
-import Footer from './components/Footer/Footer';
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+
 import './App.css';
-import HomePage from './pages/home-page/home-page';
 
 
 
-const App = () => {
+function App() {
   return (
-    <BrowserRouter>
-      <div className="app-wrapper">
-        <Header />
-        <Route exact path ="/" component = {HomePage} />
-        <Route path ="/login" component = {LoginPage} /> 
-        <Route path ="/findjob" component = {Findjob} />
-        <Footer />
-      </div>
-    </BrowserRouter>)
+    <div className="App-wrapper">
+        <Router>
+            <Header />
+            <Routes>
+                <Route path="/" element={ <HomePage /> } />
+                <Route path="/findjobe" element={ <FindjobePage /> } />
+                <Route path="/login" element={ <LoginPage />}/>
+            </Routes>
+            <Footer />
+        </Router>
+    </div>
+  );
 }
 
 export default App;

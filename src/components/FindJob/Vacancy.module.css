@@ -11,21 +11,9 @@
     padding: 20px;
 }
 
-.rating_img {
-    width: 107px;
-    padding-right: 11px;
-}
 
-.rating {
-    width: 206px;
-    height: 23px;
-    border-radius: 5px;
-    background: rgba(56, 130, 243, 0.07);
-    display: flex;
-    align-items: center;
-    padding: 3px 10px;
-    color: #3882F3;
-}
+
+
 
 .save {
     width: 118px;
