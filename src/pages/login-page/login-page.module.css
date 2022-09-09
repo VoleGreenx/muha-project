@@ -137,3 +137,10 @@
     size: 16px;
     margin-bottom: 47px;
 }
+
+@media  (max-width:480px) {
+    .loginBlock {
+        width: 100%;
+        max-width: 320px;
+    }
+}

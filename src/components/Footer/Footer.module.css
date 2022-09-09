@@ -103,3 +103,8 @@ ul li {
     align-items: center;
     font-size: 12px;
 }
+@media screen and (max-width:480px) {
+    .container {
+        width: 100%;
+    }
+}

@@ -8,7 +8,7 @@ const Navigation = () => {
            <Link to="/"><img className={classes.logo} src="img/logo.svg" alt=""/></Link> 
             <nav>
                 <Link className={classes.item}>Оставить отзыв</Link>
-                <Link to ="/findjob" className={classes.item}>Найти работу</Link>
+                <Link to ="/search-job" className={classes.item}>Найти работу</Link>
                 <Link className={classes.item}>Акции</Link>
                 <Link className={classes.item}>Справка</Link>
                 <Link className={classes.item}>Русский</Link>
