@@ -1,12 +1,13 @@
 .ratingBlock {
-    width: 206px;
-    height: 23px;
+    width: 265px;
+    height: 24px;
     border-radius: 5px;
     background: rgba(56, 130, 243, 0.07);
     display: flex;
     align-items: center;
     padding: 3px 10px;
     color: #3882F3;
+    justify-content: center;
 }
 
 .rating {

@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import HomePage from "./pages/home-page/home-page";
 import FindjobePage from "./pages/findjob-page/findjobe-page";
 import LoginPage from "./pages/login-page/login-page";
@@ -7,8 +6,6 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 import './App.css';
-
-
 
 function App() {
   return (
