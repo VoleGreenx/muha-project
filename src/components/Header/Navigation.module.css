@@ -33,3 +33,9 @@ nav {
     margin-right: 180px;
 }
 
+@media (max-width:480px){
+    nav, navig {
+        width: 100%;
+        max-width: 300px;
+    }
+}
