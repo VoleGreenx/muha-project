@@ -66,3 +66,11 @@ hr {
 
 }
 
+@media (max-width:480px) {
+    .content, .vacancy {
+        width: 100%;
+    }
+    .content {
+        flex-direction: column;
+    }
+}

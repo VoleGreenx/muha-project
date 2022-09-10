@@ -32,10 +32,8 @@ nav {
 .item:nth-child(4){
     margin-right: 180px;
 }
-
-@media (max-width:480px){
-    nav, navig {
-        width: 100%;
-        max-width: 300px;
-    }
+@media (max-width:480px) {
+    nav {
+        width: 100%;    
+}
 }

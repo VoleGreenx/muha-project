@@ -41,7 +41,7 @@ ul li {
     position: relative;
 }
 .cta_body:after {
-    content: url(/src/components/Footer/cta_bg.png);;
+    content: url(/src/components/Footer/cta_bg.png);
     position: absolute;
     right: -43px;
     bottom: -4px;
@@ -103,8 +103,33 @@ ul li {
     align-items: center;
     font-size: 12px;
 }
-@media screen and (max-width:480px) {
+@media (max-width:480px) {
+    .wrap {
+        flex-wrap: wrap;
+    }
     .container {
         width: 100%;
+        max-width: fit-content;
+        padding: 0 15px;
+    }
+    .linked {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .cta {
+        width: 100%;
+    }
+    .cta_body::after {
+        height: 280px;
+        content: "";
+        width: 210px;
+        position: absolute;
+        right: -10px;
+        bottom: 0;
+        background: url(/src/components/Footer/cta_bg.png);
+        background-size: 160px;
+        background-repeat: no-repeat;
+        background-position: bottom;
     }
 }
